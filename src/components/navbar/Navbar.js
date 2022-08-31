@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faBagShopping, faUser } from "@fortawesome/free-solid-svg-icons";
+import {} from "@fortawesome/free-brands-svg-icons";
 
 const navbar = () => {
     return (
@@ -11,14 +11,14 @@ const navbar = () => {
                     <li>
                         <a href="#top">Inicio</a>
                         <a href="#top">Productos</a>
+                        <a href="#top">FAQS</a>
                         <a href="#top">Contacto</a>
                     </li>
                 </ul>
             </div>
             <div className="navbar-icons">
-                <a href="#top" className='icons'><FontAwesomeIcon icon={faInstagram} /></a>
-                <a href="#top" className='icons'><FontAwesomeIcon icon={faCartShopping} /></a>
-                <a href="#top" className='icons'><FontAwesomeIcon icon={faEnvelope} /></a>
+                <a href="#top" className='icons'><FontAwesomeIcon icon={faUser} /></a>
+                <a href="#top" className='icons'><FontAwesomeIcon icon={faBagShopping} /></a>
             </div>
         </div>
     );
