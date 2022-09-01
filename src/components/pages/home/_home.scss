@@ -1,10 +1,8 @@
-#home{
-    min-height: 100vh;
-    background-image: url(https://images.rawpixel.com/image_1000/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjExMDktYmctMTZjLXguanBn.jpg);
-    @include bg-cover;
-    
-    .title{
-        margin-top: 30px;
-        color: $font-color;
-    }
+#home {
+  min-height: 100vh;
+  background-color: $bg-color;
+  .title {
+    padding: 100px 0;
+    color: $fonts;
+  }
 }

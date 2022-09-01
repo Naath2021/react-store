@@ -1,8 +1,9 @@
 .navbar-container {
+  padding-top: 100px;
   width: 100%;
   height: 15vh;
   @include flex-row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   .navbar-logo {
     width: 80px;
   }
@@ -11,17 +12,17 @@
       @include text-deco-none;
       font-family: "Nanum Gothic", sans-serif;
       font-size: 20px;
-      color: $font-color;
+      color: $fonts;
       padding: 0 15px;
     }
   }
-  .icon-container{
+  .icon-container {
     display: flex;
-    a{
+    a {
       @include flex-row;
       padding-left: 15px;
       font-size: 20px;
-      color: $font-color;
+      color: $fonts;
     }
   }
 }

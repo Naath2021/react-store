@@ -1,18 +1,15 @@
 @mixin flex-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
 }
 
 @mixin bg-fixed {
   background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
-}
-
-@mixin bg-cover {
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }

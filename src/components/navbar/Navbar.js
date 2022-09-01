@@ -2,11 +2,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { CartWidget } from '../cart/CartWidget';
 import { emptyCartAlert } from '../cart/CartWidget';
+import logo from "../../assets/logo.jpg" 
 
 const navbar = () => {
     return (
         <div className="navbar-container">
-            <img src="https://static.thenounproject.com/png/2651654-200.png" className="navbar-logo" alt="logo"></img>
+            <img src={logo} className="navbar-logo" alt="logo"></img>
             <div className='navbar-list-container'>
                 <ul>
                     <li>

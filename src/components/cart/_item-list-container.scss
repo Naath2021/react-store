@@ -1,8 +1,16 @@
-.title{
-    font-family: 'Aboreto', cursive;
-    color: black;
-    font-size: 5vw;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
+.title {
+  font-family: "Aboreto", cursive;
+  color: black;
+  font-size: 5vw;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.cards-container {
+    padding-bottom: 300px;
+  @include flex-row;
+  justify-content: center;
+  .card{
+    width: 350px;
+  }
 }
