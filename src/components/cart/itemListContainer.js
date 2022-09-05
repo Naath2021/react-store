@@ -4,7 +4,7 @@ import product3 from "../../assets/product3.jpg"
 import product4 from "../../assets/product4.jpg"
 import Counter from "../counter/Counter"
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
   return (
     <div>
       <h1 className="title">LA COLGADA</h1>
