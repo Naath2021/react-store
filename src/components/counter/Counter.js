@@ -4,7 +4,7 @@ const Counter = () => {
     const [items, setitems] = useState(0)
 
     const AddItem = () => setitems(items + 1)
-    const RemoveItem = () => items > 1 ? setitems(items - 1) : alert("Acción inválida.")
+    const RemoveItem = () => items > 0 ? setitems(items - 1) : alert("Acción inválida.")
 
     return (
         <div className="btn-add-items-to-cart-container">
