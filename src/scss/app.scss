@@ -1,4 +1,4 @@
 @import "./src/scss/base";
 @import "./src/scss/vars/color", "./src/scss/vars/sizes";
 @import "./src/scss/mixin";
-@import "./src/components/navbar/navbar", "/src/components/counter/counter";
+@import "/src/components/buttons/buttons", "/src/components/counter/counter", "/src/components/navbar/navbar", "/src/components/pages/home/home", "/src/components/pages/products/products", "/src/components/products/productList/product-list", "/src/components/products/products-card/products-card.scss";
