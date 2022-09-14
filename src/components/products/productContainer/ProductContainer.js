@@ -1,21 +1,22 @@
+import { useEffect, useState, React } from "react"
+import ProductList from "../../products/productList/ProductList"
 import ProductsMock from "../ProductsMock"
-import ProductList from "../productList/ProductList"
-import { useEffect, useState } from "react"
 
 const ProductContainer = () => {
 
     const [productsInfo, setProductsInfo] = useState([]);
 
-    useEffect(() => {
-        getProductsInfo.then((response) => {
-            setProductsInfo(response)
-        })
-    })
 
     const getProductsInfo = new Promise((resolve) => {
         setTimeout(() => {
             resolve(ProductsMock)
         }, 2000)
+    })
+
+    useEffect(() => {
+        getProductsInfo.then((response) => {
+            setProductsInfo(response)
+        })
     })
 
     return (

@@ -1,14 +1,17 @@
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { CartWidget } from '../cart/CartWidget';
 import { emptyCartAlert } from '../cart/CartWidget';
 import logo from "../../assets/image/logo/logo.jpg"
 import { Link } from "react-router-dom"
+import Cart from '../cart/Cart';
+// import DropdownProduct from '../dropdown/Dropdown';
 
-const navbar = () => {
+const Navbar = () => {
     return (
         <div className="navbar-container">
-            <img src={logo} className="navbar-logo" alt="logo"></img>
+            <Link to={"/"}><img src={logo} className="navbar-logo" alt="logo" /></Link>
             <div className='navbar-list-container'>
                 <ul>
                     <li>
@@ -20,11 +23,11 @@ const navbar = () => {
                 </ul>
             </div>
             <div className='icon-container'>
-                <a href="#top"><FontAwesomeIcon icon={faUser} /></a>
-                <CartWidget emptyCart={emptyCartAlert} />
+                <Link to={"/login"}><FontAwesomeIcon icon={faUser} /> </Link>
+                <CartWidget emptyCart={emptyCartAlert} Cart={<Cart/>}/>
             </div>
         </div>
     );
 };
 
-export default navbar;
+export default Navbar
