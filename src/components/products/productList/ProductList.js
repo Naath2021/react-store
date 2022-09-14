@@ -1,11 +1,8 @@
-
+import React from "react";
 import ProductsCard from "../products-card/ProductsCard";
 import { Link } from "react-router-dom";
 
 const ProductList = ({ list }) => {
-    list.map((product) => (
-        console.log(product.image)
-    ))
     return (
         <div className="product-container">
             {
